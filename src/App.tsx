@@ -90,11 +90,11 @@ const App: React.FC = () => {
         <div className={`flex flex-col lg:flex-row lg:items-start lg:justify-center ${htmlText ? 'lg:h-96' : 'lg:h-32'}`}>
           <ImageUpload
             onUpload={readHtmlFromSvg}
-            className="lg:w-2/5 xl:max-w-lg mb-4 lg:mb-0 h-full" />
+            className="lg:w-5/12 xl:max-w-lg mb-4 lg:mb-0 h-full bg-white" />
 
           <div
             ref={outputRef}
-            className={`relative rounded-md lg:w-3/5 xl:max-w-4xl lg:ml-4 xl:ml-10 max-h-96 bg-gray-850 overflow-auto ${isLoading ? 'flex flex-row justify-center items-center min-h-full' : ''}`}
+            className={`relative rounded-md lg:w-7/12 xl:max-w-4xl lg:ml-4 xl:ml-10 max-h-96 bg-gray-850 overflow-auto ${isLoading ? 'flex flex-row justify-center items-center min-h-full' : ''}`}
           >
             {isLoading ?
               <Spinner /> :
