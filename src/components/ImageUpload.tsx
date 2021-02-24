@@ -25,7 +25,6 @@ const ImageUpload: React.FC<Props> = props => {
             pickedFile = input.files[0]
             setFile(pickedFile)
         }
-        //props.onInput(props.id, pickedFile, fileIsValid)
     }
 
     const fileInput = (
@@ -38,7 +37,7 @@ const ImageUpload: React.FC<Props> = props => {
                         name="file-upload"
                         type="file"
                         className="sr-only"
-                        accept=".svg"
+                        accept=".svg, .html"
                         onChange={imagePicked} />
                 </label>
             </div>
