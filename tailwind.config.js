@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      colors: {
+        'red-650': '#eb3c54',
+        'gray-850': '#1c1d21'
+      },
       fontFamily: {
         'inter': [
           'Inter',
