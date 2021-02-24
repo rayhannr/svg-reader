@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -5,7 +7,11 @@ module.exports = {
     extend: {
       colors: {
         'red-650': '#eb3c54',
-        'gray-850': '#1c1d21'
+        'gray-850': '#1c1d21',
+        'rose-500': colors.rose[500]
+      },
+      height: {
+        '88': '22rem'
       },
       fontFamily: {
         'inter': [

@@ -29,15 +29,15 @@ const ImageUpload: React.FC<Props> = props => {
 
     const fileInput = (
         <>
-            <UploadImage className="mx-auto h-12 w-12 text-red-500" />
+            <UploadImage className="mx-auto h-12 w-12 text-red-650" />
             <div className="text-sm text-center">
                 <label className="relative cursor-pointer bg-transparent rounded-md font-medium focus-within:outline-none">
-                    <span className="text-red-500 hover:text-red-400">Upload SVG</span>
+                    <span className="text-red-650 hover:text-red-400">Upload SVG</span>
                     <input
                         name="file-upload"
                         type="file"
                         className="sr-only"
-                        accept=".svg, .html"
+                        accept=".svg"
                         onChange={imagePicked} />
                 </label>
             </div>
