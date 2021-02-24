@@ -63,7 +63,8 @@ const App: React.FC = () => {
   }
 
   const copyOutput = () => {
-    let outputContent = outputRef.current?.textContent!.replace('HTMLJSX', '')!
+    if(outputType === 'preview') return
+    let outputContent = outputRef.current?.textContent!.replace('PreviewHTMLJSX', '')!
     navigator.clipboard.writeText(outputContent)
       .catch(err => {
         console.log(err)
@@ -119,7 +120,7 @@ const App: React.FC = () => {
                     isSelected={outputType === 'jsx'}
                     label="JSX"
                     value="jsx" />
-                  <Copy onClick={copyOutput} />
+                  <Copy onClick={copyOutput} disabled={outputType === 'preview'} />
                 </div>
                 }
                 {outputType === 'preview' ?
