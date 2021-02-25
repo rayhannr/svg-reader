@@ -42,7 +42,7 @@ const ImageUpload: React.FC<Props> = props => {
                 </label>
             </div>
             <p className="text-xs text-red-400">
-                The file should no more than 5 MB
+                The .svg file should be less than 5 MB
             </p>
         </>
     )
