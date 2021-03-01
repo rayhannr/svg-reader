@@ -4,8 +4,8 @@ module.exports = {
         require('autoprefixer'),
         require('@fullhuman/postcss-purgecss')({
             content: [
-                './src/**/*.jsx',
-                './src/**/*.js',
+                './src/**/*.tsx',
+                './src/**/*.ts',
                 './public/index.html'
               ],
               css: ['./src/tailwind.css'],
