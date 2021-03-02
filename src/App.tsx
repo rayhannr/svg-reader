@@ -1,6 +1,6 @@
 import React, { useCallback, useState, useRef, ChangeEvent } from 'react'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { anOldHope } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+import atomDark from 'react-syntax-highlighter/dist/esm/styles/prism/atom-dark'
 import { filterHtml, convertToJsx } from './util/App'
 import './tailwind.css'
 
@@ -102,7 +102,7 @@ const App: React.FC = () => {
                   <img src={svgUrl} className="w-48 h-auto md:w-72 lg:w-auto lg:h-88 mx-auto" alt="preview" /> :
                   <SyntaxHighlighter
                     language="htmlbars"
-                    style={anOldHope}
+                    style={atomDark}
                     wrapLongLines
                   >
                     {htmlText ? (outputType === 'html' ? filterHtml(htmlText) : convertToJsx(htmlText)) : 'The output will be shown here.'}
